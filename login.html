@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleLogin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>SmartEstoque: Acesso ao site</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-box login">
+            <form action="login.php" method="POST">
+                <h1>Você possui uma conta?</h1>
+                <div class="input-box">
+                    <input name="nome" type="text" placeholder="Usuário" required>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="input-box">
+                    <input name="senha" type="password" placeholder="Senha" required>
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <div class="forgot-link">
+                    <a href="#">Esqueceu sua senha?</a>
+                </div>
+                <button type="submit" class="btn">Acessar</button>
+            </form>
+        </div>
+
+        <div class="form-box register">
+            <form action="register.php" method="POST">
+                <h1>Ainda não possui uma conta?</h1>
+                <div class="input-box">
+                    <input name="nome" type="text" placeholder="Usuário" required>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="input-box">
+                    <input name="email" type="email" placeholder="Email" required>
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="input-box">
+                    <input name="senha" type="password" placeholder="Senha" required>
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <button type="submit" class="btn">Cadastrar</button>
+            </form>
+        </div>
+
+        <div class="toggle-box">
+            <div class="toggle-panel toggle-left">
+                <h1>Olá, Bem-vindo(a)!</h1>
+                <p>Ainda não possui uma conta?</p>
+                <button class="btn register-btn">Cadastre-se</button>
+            </div>
+            <div class="toggle-panel toggle-right">
+                <h1>Bem-vindo(a) de volta!</h1>
+                <p>Já possui uma conta?</p>
+                <button class="btn login-btn">Acessar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>

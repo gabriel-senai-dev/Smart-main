@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styleMétricas.css">
+    <link rel="icon" href="imagem/logisticaicon.webp" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Cardo:ital,wght@0,400;0,700;1,400&family=DM+Serif+Display:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poiret+One&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navegador">
+            <div class="logo">
+                <a href="index.html"><img src="imagem/logo1.png" alt=""></a>
+                <h1>
+                    StockInteligente
+                </h1> 
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Sobre.html">Sobre</a></li>
+                <li><a href="Métricas.html">Métricas</a></li>
+                <li><a href="Gerenciamento.html">Gerenciamento</a></li>
+                <li><a href="Contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- Sidebar -->
+      <div class="sidebar">
+        <ul>
+            <li><a href="#" id="pesquisar">Pesquisar Produtos</a></li>
+                <input class="hidden" type="text" id="searchInput" placeholder="Digite o nome do produto">
+                <button class="hidden"id="SearchButton">Enviar</button>
+            <li><a href="#">Cadastrar Produtos</a></li>
+            <li><a href="#">Listar Produtos</a></li>
+            <li><a href="#">Checar Métricas para o Produto</a></li>
+        </ul>
+    </div>
+
+    <!-- Main content -->
+    <section class="corpo1">
+        <div class="weight-container">
+            <h2>Insira os Valores de Peso</h2>
+            <form class="weight-form">
+                <div class="input-group">
+                    <label for="min-weight"><h3>Peso Mínimo:</h3></label>
+                    <input type="number" id="min-weight" placeholder="Ex: 50 kg">
+                </div>
+                <div class="input-group">
+                    <label for="avg-weight"><h3>Peso Médio:</h3></label>
+                    <input type="number" id="avg-weight" placeholder="Ex: 70 kg">
+                </div>
+                <div class="input-group">
+                    <label for="max-weight"><h3>Peso Máximo:</h3></label>
+                    <input type="number" id="max-weight" placeholder="Ex: 100 kg">
+                </div>
+                <button type="submit">Salvar</button>
+            </form>
+        </div>
+    </section>
+    </main>
+
+    <footer>
+        <div class="contentFooter">
+            <h4>StockInteligente</h4>
+            <div class="segundo">
+                <div class="esquerda"> 
+                    <h3>Sobre</h3>
+                    <h5>Equipe</h5>
+                </div>
+                <div class="meio">
+                    <h3>Privacidade</h3>
+                    <h5>Política de Privacidade</h5>
+                    <h5>Termos e Condições</h5>
+                </div>
+                <div class="direita">
+                    <h3>Social</h3>
+                    <h5>Instagram</h5>
+                    <h5>Email</h5>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="metricas.js"></script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+header{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    display: flex;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+}
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    gap: 6vh;
+   
+}
+nav img{
+    margin-left: 15%;
+    display: flex;
+    width: 15vh;
+    height: 5vh;
+}
+nav h1{
+    display: flex;
+    margin-right: 10vh;
+    font-family:'Inter';
+    font-size: 22px;
+    font-weight:300;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.h2{
+    display: flex;
+    margin-right: 5%;
+    margin-left: 25%;
+    justify-content: space-between;
+    gap: 8vh;
+    
+}
+.h2 h2{ 
+    font-family:'Inter';
+    font-size: large;
+    display: flex;
+    font-weight:300;
+}
+/*-----------------------------------------*/
+a:hover{
+    color: rgb(112, 146, 254);
+}
+/*---==================================---*/
+.corpo1 {
+    background-image: url(imagem/fundoazul.jpeg);
+    mask-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 42vh;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    display: flex;
+    justify-content: space-between; /* Alinha os itens no eixo horizontal */
+    
+}
+
+.legenda1 {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between; /* Espaça o texto à esquerda e a imagem à direita */
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 50%; /* Ocupa 50% da largura */
+}
+
+.legenda1 h3 {
+    color: rgba(254, 254, 209, 0.838);
+    margin-top: -30px;
+    text-align: center;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-weight: 300;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.legenda1 h4 {
+    color: white;
+    margin-top: -5px;
+    font-weight: 100%;
+    text-align: center;
+    font-family: 'Alumni Sans Pinstripe', sans-serif;
+    font-size: 30px;
+    letter-spacing: 6px;
+    padding: 20px;
+}
+
+.imgcont {
+    height: 100vh; /* A imagem ocupará 100% da altura do container */
+    width: 50%; /* A imagem ocupará 50% da largura */
+}
+
+.imgcont img {
+    width: 100%; /* A imagem ocupará toda a largura disponível */
+    height: 91vh; /* A imagem ocupará toda a altura disponível */
+    object-fit: cover; /* Faz a imagem cobrir o espaço sem distorcer, cortando o excesso */
+}
+
+/* Carosel */
+.carousel {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.carousel-images img {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+/*========================================================*/
+footer {
+    display: flex;
+    flex-direction: column; /* Alinha os itens em coluna */
+    background-color: rgba(246, 238, 238, 0.925);
+    height: 14vh;
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    width: 100%; /* Garantir que o rodapé ocupe toda a largura */
+    padding-bottom: 38px;
+    bottom: 0;
+    position: fixed;
+}
+
+footer h4 {
+    text-align: center; /* Centraliza o título horizontalmente */
+    color: rgb(0, 0, 0);
+    font-family: 'Inter';
+    font-size: 15px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.segundo {
+    display: flex;
+    gap: 70px;
+    width: 100%;
+    justify-content: center; /* Centraliza os itens dentro do segundo */
+    align-items: center;
+}
+
+.esquerda, .meio, .direita {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.segundo h3 {
+    color: rgb(0, 0, 0);
+    font-family: 'Inter';
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.segundo h5 {
+    color: rgb(0, 0, 0);
+    font-family: 'Inter';
+    font-size: 12px;
+    font-weight: 400;
+    margin: 2px 0;
+}
+
+h5:hover{
+    color: rgb(112, 146, 254);
+}
+/*======================Pag Sobre==========================*/

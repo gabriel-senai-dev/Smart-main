@@ -1,0 +1,286 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    background-image: url(imagem/fundoazul.jpeg);
+    mask-repeat: no-repeat;
+    background-size: cover;
+}
+
+header{
+    background-color: rgb(255, 255, 255);
+    width: calc(100% - 230px);
+    margin-left: 230px;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+nav .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    margin-left: 20px;
+    width: 15vh;
+    height: auto;
+}
+
+.logo h1{
+    display: flex;
+    font-family:'Inter';
+    font-size: 22px;
+    font-weight: 300;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 4vw;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-family:'Inter';
+    font-weight: 300;
+    font-size: large;
+
+}
+
+/*-----------------------------------------*/
+a:hover{
+    color: rgb(112, 146, 254);
+}
+/*---==================================---*/
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+.corpo1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20vh;
+}
+
+.weight-container {
+    width: 400px;
+    padding: 20px;
+    border: 2px solid #02114942;
+    border-radius: 10px;
+    background-color: rgb(2, 29, 92);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.425);
+    text-align: center;
+    font-family: 'Inter';
+}
+
+.weight-container h2 {
+    margin-bottom: 30px;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.weight-form {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-group {
+    margin-top: -10px;
+    margin-bottom: -2px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.input-group label {
+    color: white;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: -5px;
+    color: #555;
+}
+.input-group h3{
+    margin-top: -3px;
+    font-family: 'Inter';
+    color: white;
+    font-weight: 200;
+    
+}
+.input-group input {
+    margin-top: -3px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.input-group input:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.4);
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #044993;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Sidebar styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 230px;
+    min-height: 100vh;
+    padding-top: 20vh;
+    background-color: #021149;
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 20px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #044993;
+    border-radius: 5px;
+}
+/* Serch */
+.hidden {
+    display: none;
+}
+
+#searchInput {
+    width: 80%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border: 2px solid #044993;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+}
+
+#SearchButton {
+    padding: 10px 20px;
+    background-color: #044993;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 70px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+}
+
+#SearchButton:hover {
+    background-color: #0056b3;
+}
+
+/*========================================================*/
+footer {
+    width: 100%;
+    background-color: rgba(246, 238, 238, 0.925);
+    position: fixed;
+    bottom: 0;
+}
+
+.contentFooter {
+    display: flex;
+    flex-direction: column; /* Alinha os itens em coluna */
+    height: 140px;
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    align-items: center;
+    width: calc(100% - 230px); /* Garantir que o rodapé ocupe toda a largura */
+    margin: auto;
+}
+
+.contentFooter h4 {
+    text-align: center; /* Centraliza o título horizontalmente */
+    color: rgb(0, 0, 0);
+    font-family: 'Inter';
+    font-size: 15px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.segundo {
+    display: flex;
+    gap: 70px;
+    width: 100%;
+    justify-content: center; /* Centraliza os itens dentro do segundo */
+    align-items: center;
+}
+
+.esquerda, .meio, .direita {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.segundo h3 {
+    color: rgb(0, 0, 0);
+    font-family: 'Inter';
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.segundo h5 {
+    color: rgb(0, 0, 0);
+    font-family: 'Inter';
+    font-size: 12px;
+    font-weight: 400;
+    margin: 2px 0;
+}
+
+h5:hover{
+    color: rgb(112, 146, 254);
+}
